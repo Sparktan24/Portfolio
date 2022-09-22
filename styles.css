@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-h1 {
-  color: red;
+body {
+  margin: 0%;
 }
 
 .wrapper {
@@ -32,6 +32,7 @@ h1 {
 
 .menu-flex {
   display: flex;
+  padding: 8px;
 }
 
 .logo-name {
@@ -47,6 +48,7 @@ h1 {
   line-height: 24px;
   text-align: center;
   color: #fff;
+  text-decoration: none;
 }
 
 .logo-name p {
@@ -65,7 +67,7 @@ h1 {
   font-family: 'Crete Round', serif;
 }
 
-#primary-text p {
+#primary-text h1 {
   margin: 0%;
 }
 
@@ -79,6 +81,11 @@ h1 {
   color: #fff5e1;
 }
 
+#supporting-text h2 {
+  margin: 5% 0%;
+  margin-bottom: 0%;
+}
+
 #description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -88,7 +95,19 @@ h1 {
   color: #fff;
 }
 
+#description p {
+  margin: 0%;
+  padding-right: 10%;
+}
+
 .social-media {
   display: flex;
   align-items: center;
+}
+
+.social-media ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
 }
