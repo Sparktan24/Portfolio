@@ -1,3 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 h1 {
   color: red;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flex-toolbar {
+  display: flex;
+  background: #3c3a39;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+  gap: 12px;
+  background: #1c1a19;
+  background-image: url('resources/Menu-button/bg-image.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.menu-flex {
+  display: flex;
+}
+
+.logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  top: calc(50% -44px/2);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo-name p {
+  padding: 12px 12px;
+  margin: 0%;
+}
+
+#primary-text {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+}
+#primary-text p {
+  margin: 0%;
+}
+
+#supporting-text {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+#description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  padding: 0px;
 }
