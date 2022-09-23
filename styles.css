@@ -162,6 +162,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin: 0;;
 }
 
 .featured-content {
@@ -171,6 +172,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
+  margin: 0;
 }
 
 .featured-tags ul {
@@ -332,6 +334,7 @@ body {
   line-height: 86px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+  margin: 0;
 }
 
 hr.rounded {
