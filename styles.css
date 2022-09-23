@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
   margin: 0%;
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -120,3 +121,100 @@ body {
   padding: 120px 0px;
   gap: 80px;
 }
+
+#my-recent-works {
+  display: flex;
+  align-items: center;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  border-bottom: 1px solid #212121;
+}
+
+#my-recent-works h2{
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 24px;
+  width: 375px;
+}
+
+.grid-item1 {
+  gap: 24px;
+}
+
+.featured-work {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.title-featured {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.featured-content {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.featured-tags ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 12px;
+  padding: 0%;
+  margin: 0px;
+}
+
+.featured-tags ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+#featured-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+#btn-text {
+
+}
+
