@@ -314,7 +314,7 @@ hr.rounded {
 .about-me-skills {
   display: flex;
   flex-direction: column;
-  padding: 0px 24px 120px 24px;
+  padding: 0px 24px 0px 24px;
   gap: 24px;
   background: #1c1a19;
   background-repeat: no-repeat;
@@ -332,6 +332,7 @@ hr.rounded {
 .language-block {
   display: flex;
   flex-direction: column;
+  gap:20px
 }
 
 .skills-block {
@@ -343,6 +344,7 @@ hr.rounded {
   flex-direction: column;
   align-items: center;
   padding: 0%;
+  gap: 32px;
 }
 
 .skills-block .language-block ul li {
@@ -362,4 +364,8 @@ hr.rounded {
   font-size: 32px;
   line-height: 44px;
   margin-right: 30px;
+}
+
+.frameworks {
+  font-family: 'Inter', sans-serif !important;
 }
