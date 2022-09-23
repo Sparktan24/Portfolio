@@ -87,7 +87,7 @@ body {
   margin-bottom: 0%;
 }
 
-#description {
+.description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +96,7 @@ body {
   color: #fff;
 }
 
-#description p {
+.description p {
   margin: 0%;
   padding-right: 10%;
 }
@@ -142,7 +142,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   gap: 24px;
-  width: 375px;
+  margin: 0px 24px;
 }
 
 .grid-item1 {
@@ -195,9 +195,7 @@ body {
   color: #091e42;
 }
 
-#featured-btn {
-  display: flex;
-  align-items: center;
+.featured-btn {
   padding: 12px;
   gap: 10px;
   background: #ff6b00;
@@ -210,6 +208,7 @@ body {
   text-align: center;
   color: #fff;
   border: none;
+  margin-right: 240px;
 }
 
 .work-post {
@@ -280,5 +279,30 @@ body {
   color: #fff;
   padding: 12px;
   border: none;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+  gap: 24px;
+  background: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: url(resources/images/about-me-BG.svg);
+}
+
+.about-me-text {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
 }
 
