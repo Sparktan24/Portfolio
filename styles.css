@@ -115,7 +115,6 @@ body {
 }
 
 .recent-works-section {
-  border: 5px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,6 +211,22 @@ body {
   margin-right: 240px;
 }
 
+.featured-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.featured-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0
+}
+
+.featured-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 .work-post {
   display: flex;
   flex-direction: column;
@@ -280,6 +295,22 @@ body {
   color: #fff;
   padding: 12px;
   border: none;
+}
+
+.work-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.work-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0
+}
+
+.work-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
 }
 
 .about-me {
