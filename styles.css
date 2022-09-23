@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap');
 
 body {
   margin: 0%;
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -86,7 +88,7 @@ body {
   margin-bottom: 0%;
 }
 
-#description {
+.description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -95,7 +97,7 @@ body {
   color: #fff;
 }
 
-#description p {
+.description p {
   margin: 0%;
   padding-right: 10%;
 }
@@ -110,4 +112,290 @@ body {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
+}
+
+.recent-works-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+  gap: 80px;
+}
+
+#my-recent-works {
+  display: flex;
+  align-items: center;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  border-bottom: 1px solid #212121;
+}
+
+#my-recent-works h2 {
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 24px;
+  margin: 0 24px;
+}
+
+.grid-item1 {
+  gap: 24px;
+}
+
+.featured-work {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title-featured {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin: 0;
+}
+
+.featured-content {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin: 0;
+}
+
+.featured-tags ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 12px;
+  padding: 0%;
+  margin: 0;
+}
+
+.featured-tags ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+.featured-btn {
+  padding: 12px;
+  gap: 10px;
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  margin-right: 240px;
+}
+
+.featured-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.featured-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.featured-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.work-post {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(resources/images/workBG.svg);
+}
+
+.title-work {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin: 80px 16px 12px 16px;
+}
+
+.work-content {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 16px;
+}
+
+.work-tags {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 12px;
+}
+
+.work-tags ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 12px;
+  padding: 0%;
+  margin: 0 16px 22px 16px;
+}
+
+.work-tags ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.work-btn {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 00.03em;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ff6b00;
+  color: #fff;
+  padding: 12px;
+  border: none;
+}
+
+.work-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.work-btn:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+.work-btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+  gap: 24px;
+  background: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-image: url(resources/images/about-me-BG.svg);
+}
+
+.about-me-text {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 0;
+}
+
+hr.rounded {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+  margin: 0;
+  bottom: 0;
+}
+
+.about-me-skills {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 0 24px;
+  gap: 24px;
+  background: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  gap: 24px;
+  color: #fff;
+}
+
+.language-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills-block .language-block ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+  gap: 32px;
+}
+
+.skills-block .language-block ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  list-style-type: none;
+  gap: 32px;
+}
+
+.skills-block .language-block .lan-title {
+  font-family: 'Meera Inimai', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-right: 30px;
+}
+
+.frameworks {
+  font-family: 'Inter', sans-serif !important;
 }
