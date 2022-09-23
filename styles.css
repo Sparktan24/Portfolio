@@ -118,7 +118,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0px;
+  padding: 120px 0;
   gap: 80px;
 }
 
@@ -133,7 +133,7 @@ body {
   border-bottom: 1px solid #212121;
 }
 
-#my-recent-works h2{
+#my-recent-works h2 {
   font-size: 40px;
   color: #1c1a19;
 }
@@ -142,7 +142,7 @@ body {
   display: grid;
   grid-template-columns: auto;
   gap: 24px;
-  margin: 0px 24px;
+  margin: 0 24px;
 }
 
 .grid-item1 {
@@ -173,13 +173,13 @@ body {
   color: #091e42;
 }
 
-.featured-tags ul{
+.featured-tags ul {
   display: flex;
   list-style-type: none;
   align-items: center;
   gap: 12px;
   padding: 0%;
-  margin: 0px;
+  margin: 0;
 }
 
 .featured-tags ul li {
@@ -219,7 +219,7 @@ body {
 
 .featured-btn:active {
   background-color: #e05304;
-  color: #f4f1f0
+  color: #f4f1f0;
 }
 
 .featured-btn:disabled {
@@ -250,13 +250,13 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin: 0px 16px;
+  margin: 0 16px;
 }
 
 .work-tags {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
 }
 
@@ -266,7 +266,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 0%;
-  margin: 0px 16px 22px 16px;
+  margin: 0 16px 22px 16px;
 }
 
 .work-tags ul li {
@@ -305,7 +305,7 @@ body {
 
 .work-btn:active {
   background-color: #e05304;
-  color: #f4f1f0
+  color: #f4f1f0;
 }
 
 .work-btn:disabled {
@@ -337,15 +337,14 @@ body {
 hr.rounded {
   border-top: 2px solid #bbb;
   border-radius: 5px;
-  margin: 0px;
-  bottom: 0px;
-
+  margin: 0;
+  bottom: 0;
 }
 
 .about-me-skills {
   display: flex;
   flex-direction: column;
-  padding: 0px 24px 0px 24px;
+  padding: 0 24px 0 24px;
   gap: 24px;
   background: #1c1a19;
   background-repeat: no-repeat;
