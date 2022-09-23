@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap');
 
 body {
   margin: 0%;
@@ -302,7 +303,63 @@ body {
   color: #ff6b00;
 }
 
-hr.solid {
-  border-top: 3px solid #bbb;
+hr.rounded {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+  margin: 0px;
+  bottom: 0px;
+
 }
 
+.about-me-skills {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px 120px 24px;
+  gap: 24px;
+  background: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 24px;
+  gap: 24px;
+}
+
+.language-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-block {
+  color: #fff;
+}
+
+.skills-block .language-block ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0%;
+}
+
+.skills-block .language-block ul li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  list-style-type: none;
+  gap: 32px;
+}
+
+.skills-block .language-block .lan-title{
+  font-family: 'Meera Inimai', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-right: 30px;
+}
