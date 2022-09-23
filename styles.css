@@ -358,16 +358,13 @@ hr.rounded {
   align-items: center;
   padding: 120px 24px;
   gap: 24px;
+  color: #fff;
 }
 
 .language-block {
   display: flex;
   flex-direction: column;
-  gap:20px
-}
-
-.skills-block {
-  color: #fff;
+  gap: 20px;
 }
 
 .skills-block .language-block ul {
@@ -388,7 +385,7 @@ hr.rounded {
   gap: 32px;
 }
 
-.skills-block .language-block .lan-title{
+.skills-block .language-block .lan-title {
   font-family: 'Meera Inimai', sans-serif;
   font-style: normal;
   font-weight: 700;
