@@ -105,6 +105,7 @@ body {
 .social-media {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .social-media ul {
@@ -398,4 +399,81 @@ hr.rounded {
 
 .frameworks {
   font-family: 'Inter', sans-serif !important;
+}
+
+.contact-text {
+  padding: 120px 24px 58px 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 24px 124px 24px;
+}
+
+.contact-me-form ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-me-btn {
+  margin: 0;
+}
+
+.contact-me-form ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-me-form ul li input {
+  width: 100%;
+  height: 18px;
+  padding: 15px 16px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact-me-form ul li textarea {
+  width: 100%;
+  padding: 12px;
+  background: #fbf8f7;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+.footer ul {
+  gap: 21px;
+}
+
+.footer-line {
+  width: 134px;
+  height: 5px;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
 }
