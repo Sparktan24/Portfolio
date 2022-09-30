@@ -8,16 +8,15 @@ body {
   margin: 0%;
 }
 
-.wrapper {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .flex-toolbar {
   display: flex;
   background: #3c3a39;
   justify-content: space-between;
   align-items: center;
+}
+
+.upper-nav-desktop {
+  display: none;
 }
 
 .headline-section {
@@ -42,6 +41,7 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
+  margin-left: 24px;
   top: calc(50% - 44px / 2);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -105,6 +105,10 @@ body {
 .social-media {
   display: flex;
   align-items: center;
+  justify-content: left;
+}
+
+.social-media.footer {
   justify-content: center;
 }
 
@@ -132,6 +136,7 @@ body {
   font-size: 40px;
   line-height: 52px;
   border-bottom: 1px solid #212121;
+  margin-bottom: 80px;
 }
 
 #my-recent-works h2 {
@@ -142,8 +147,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  gap: 24px;
-  margin: 0 24px;
+  gap: 30px;
 }
 
 .grid-item1 {
@@ -212,6 +216,8 @@ body {
   color: #fff;
   border: none;
   margin-right: 240px;
+  width: 161px;
+  height: 48px;
 }
 
 .featured-btn:hover {
@@ -318,7 +324,6 @@ body {
 
 .about-me {
   display: flex;
-  flex-direction: column;
   padding: 120px 24px;
   gap: 24px;
   background: #1c1a19;
@@ -343,6 +348,7 @@ hr.rounded {
   border-radius: 5px;
   margin: 0;
   bottom: 0;
+  width: 100%;
 }
 
 .about-me-skills {
@@ -415,6 +421,9 @@ hr.rounded {
   font-size: 32px;
   line-height: 44px;
   margin-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .frameworks {
@@ -476,4 +485,226 @@ hr.rounded {
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+.line-responsive {
+  display: none;
+}
+
+.works-wrapper {
+  margin: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-me-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bg-image {
+  display: none;
+}
+
+.footer-line-desktop {
+  display: none;
+}
+
+.bg-image-header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .line-responsive {
+    display: block;
+    border: 1px solid #212121;
+    width: 100%;
+  }
+
+  #my-recent-works {
+    border-bottom: none;
+    width: 100%;
+  }
+
+  .headline-section {
+    flex-direction: row-reverse;
+    background-image: none;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .social-media {
+    margin-right: 60px;
+  }
+
+  .recent-works-section {
+    align-items: baseline;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-name {
+    margin: 16px auto 16px 142px;
+  }
+
+  .menu-flex #menu {
+    display: none;
+  }
+
+  .upper-nav-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  .upper-nav-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    gap: 32px;
+    margin-right: 142px;
+  }
+
+  .modifier {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-media ul {
+    flex-direction: column;
+  }
+
+  #my-recent-works h2 {
+    flex: none;
+    margin-right: 24px;
+  }
+
+  .works-wrapper {
+    align-items: baseline;
+    margin: 0 5%;
+  }
+
+  .featured-work {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .featured-work img {
+    width: 684px;
+    height: 448px;
+  }
+
+  .featured-btn {
+    width: 161px;
+    height: 48px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-item1 {
+    grid-column: 1 / span 3;
+  }
+
+  .description p {
+    width: 566px;
+  }
+
+  .about-me-block {
+    margin: 0 5%;
+  }
+
+  .about-me {
+    background-image: none;
+    padding: 120px 0;
+  }
+
+  .bg-image {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .skills-block {
+    flex-direction: row;
+    margin: 0 5%;
+    gap: 206px;
+    padding: 120px 0;
+    align-items: baseline;
+  }
+
+  .about-me-skills {
+    align-items: center;
+  }
+
+  .skills-block .language-block ul {
+    align-items: baseline;
+  }
+
+  .contact-me-block {
+    display: flex;
+    margin-top: 130px;
+  }
+
+  .contact-text {
+    width: 40%;
+    text-align: left;
+    padding: 30px 0 0 10%;
+  }
+
+  .contact-me-form {
+    width: 60%;
+    margin: 0 10% 124px 24px;
+  }
+
+  .contact-me-form ul li {
+    justify-content: flex-start;
+  }
+
+  .social-media.footer ul {
+    flex-direction: row;
+  }
+
+  .social-media.footer {
+    margin: 0 0 16px 0;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-line-desktop {
+    height: 1px;
+    background: #dfe1e6;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .bg-image-header {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .header-content-responsive {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 250px 15px;
+  }
 }
