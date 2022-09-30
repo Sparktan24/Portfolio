@@ -53,6 +53,11 @@ body {
   text-decoration: none;
 }
 
+.logo-name:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
 .logo-name p {
   padding: 12px 12px;
   margin: 0%;
@@ -580,6 +585,11 @@ hr.rounded {
     padding: 0%;
     gap: 32px;
     margin-right: 142px;
+  }
+  
+  .upper-nav-desktop ul li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 
   .modifier {
