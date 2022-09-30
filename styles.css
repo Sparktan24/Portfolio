@@ -107,6 +107,10 @@ body {
 .social-media {
   display: flex;
   align-items: center;
+  justify-content: left;
+}
+
+.social-media.footer {
   justify-content: center;
 }
 
@@ -516,6 +520,10 @@ hr.rounded {
   display: none;
 }
 
+.bg-image-header {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .line-responsive {
     display: block;
@@ -530,8 +538,8 @@ hr.rounded {
 
   .headline-section {
     flex-direction: row-reverse;
-    background-image: url('resources/images/Illustration-header.svg');
-    padding: 192px 36px;
+    background-image: none;
+    padding: 0;
     justify-content: flex-end;
   }
   
@@ -541,6 +549,7 @@ hr.rounded {
 
   .recent-works-section {
     align-items: baseline;
+    overflow: hidden;
   }
 }
 
@@ -687,6 +696,17 @@ hr.rounded {
     background: #dfe1e6;
     display: block;
     margin-bottom: 15px;
+  }
+
+  .bg-image-header {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .header-content-responsive {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 250px 15px;
   }
 
 }
