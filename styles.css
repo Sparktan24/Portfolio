@@ -590,7 +590,7 @@ hr.rounded {
   .contact-me-form ul li {
     justify-content: flex-start;
   }
-  
+
   .upper-nav-desktop ul li:hover {
     transform: scale(1.5);
     cursor: pointer;
@@ -628,7 +628,7 @@ hr.rounded {
   .featured-btn {
     width: 161px;
     height: 48px;
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
   }
 
   .grid-container {
@@ -719,6 +719,6 @@ hr.rounded {
   }
 
   .work-btn {
-    transition: all .5s ease-out;
+    transition: all 0.5s ease-out;
   }
 }
