@@ -147,7 +147,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-  gap: 24px;
+  gap: 30px;
 }
 
 .grid-item1 {
@@ -647,6 +647,7 @@ hr.rounded {
     margin: 0 5%;
     gap: 206px;
     padding: 120px 0;
+    align-items: baseline;
   }
 
   .about-me-skills {
