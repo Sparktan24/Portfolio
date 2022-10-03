@@ -543,7 +543,6 @@ hr.rounded {
     flex-direction: row-reverse;
     background-image: none;
     padding: 0;
-    justify-content: flex-end;
   }
 
   .social-media {
