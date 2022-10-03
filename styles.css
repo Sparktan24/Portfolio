@@ -53,6 +53,11 @@ body {
   text-decoration: none;
 }
 
+.logo-name:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
 .logo-name p {
   padding: 12px 12px;
   margin: 0%;
@@ -582,6 +587,15 @@ hr.rounded {
     margin-right: 142px;
   }
 
+  .contact-me-form ul li {
+    justify-content: flex-start;
+  }
+
+  .upper-nav-desktop ul li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
   .modifier {
     display: flex;
     flex-direction: column;
@@ -614,6 +628,7 @@ hr.rounded {
   .featured-btn {
     width: 161px;
     height: 48px;
+    transition: all 0.5s ease-out;
   }
 
   .grid-container {
@@ -674,10 +689,6 @@ hr.rounded {
     margin: 0 10% 124px 24px;
   }
 
-  .contact-me-form ul li {
-    justify-content: flex-start;
-  }
-
   .social-media.footer ul {
     flex-direction: row;
   }
@@ -706,5 +717,9 @@ hr.rounded {
     display: flex;
     flex-direction: row-reverse;
     padding: 250px 15px;
+  }
+
+  .work-btn {
+    transition: all 0.5s ease-out;
   }
 }
