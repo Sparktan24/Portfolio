@@ -11,7 +11,7 @@
 
 ## Live Page
 
-[Live Page Link](https://sparktan24.github.io/Portfolio/)
+[Live Page Link] (https://sparktan24.github.io/Portfolio/)
 
 
 ## Authors
