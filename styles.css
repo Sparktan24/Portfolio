@@ -13,6 +13,8 @@ body {
   background: #3c3a39;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .upper-nav-desktop {
@@ -157,6 +159,17 @@ body {
 
 .grid-item1 {
   gap: 24px;
+}
+
+.menu-elements li {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .featured-work {
@@ -721,4 +734,42 @@ hr.rounded {
   .work-btn {
     transition: all 0.5s ease-out;
   }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #3c3a39;
+  color: white;
+}
+
+.menu-elements {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+  padding: 24px;
+}
+
+.menu-elements li a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+#close-btn {
+  color: #67798e;
+  background-color: #3c3a39;
+  border: 0;
+  align-self: flex-end;
+  font-size: 30px;
+  padding: 10px 38px 10px 10px;
+}
+
+.display-none {
+  display: none;
 }
