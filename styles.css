@@ -768,3 +768,7 @@ hr.rounded {
   font-size: 30px;
   padding: 10px 38px 10px 10px;
 }
+
+.display-none {
+  display: none;
+}
