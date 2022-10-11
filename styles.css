@@ -736,8 +736,13 @@ hr.rounded {
 }
 
 .menu-elements {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  gap: 20px;
+  padding: 24px;
 }
+
 
 .menu-elements li {
   font-family: 'Inter', sans-serif;
@@ -747,6 +752,7 @@ hr.rounded {
   line-height: 44px;
   font-weight: 700;
   text-decoration: none;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .menu-elements li a {
@@ -755,7 +761,7 @@ hr.rounded {
 }
 
 #close-btn {
-  color: #fff;
+  color: #67798e;
   background-color: #3c3a39;
   border: 0;
   align-self: flex-end;
