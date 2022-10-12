@@ -779,6 +779,9 @@ hr.rounded {
   background-color: #fff;
   padding: 5%;
   border: solid 1px #DFE1E6;
+  right: 7%;
+  left: 5%;
+  top: 10%;
 }
 
 .titlePopup {
@@ -795,11 +798,9 @@ hr.rounded {
   border: 0;
   align-self: flex-end;
   font-size: 30px;
-  padding: 10px 38px 10px 10px;
 }
 .div-pop-buttons {
   display: flex;
-  gap: 20px;
   justify-content: space-between;
 }
 
