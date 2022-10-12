@@ -777,6 +777,7 @@ hr.rounded {
 .popupContent {
   position: fixed;
   background-color: #fff;
+  padding: 5%;
 }
 
 .titlePopup {
@@ -794,4 +795,12 @@ hr.rounded {
   align-self: flex-end;
   font-size: 30px;
   padding: 10px 38px 10px 10px;
+}
+.div-pop-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.pop {
+  margin: 0;
 }

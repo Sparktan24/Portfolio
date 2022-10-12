@@ -123,3 +123,67 @@ projects.forEach((project, index) => {
   card.innerHTML = addElements;
   portfolioContainer.appendChild(card);
 });
+
+let addElements = '';
+//OPEN POPUP
+const seeProjectButton = document.querySelector('.featured-btn');
+const popupContainer = document.getElementById('popup-container');
+const divPopTitle = document.querySelector('#popTitle');
+
+seeProjectButton.addEventListener('click', () => {
+  popupContainer.classList.toggle('display-none')
+});
+//CLOSE BUTTON POP
+const closeButtonPop = document.querySelector('#close-btn-pop');
+
+//closeButtonPop.id = 'close-btn-pop';
+closeButtonPop.addEventListener('click', () => {
+  popupContainer.classList.add('display-none');
+});
+
+
+let divTitleTags = document.createElement('div');
+
+  
+//TITLE BLOCK
+projects.forEach((project, index) => {
+  addElements += `<h2 id='featured-title' class="title-featured">${project.name}</h2>`;
+  if (index === 0){
+      addElements += `
+      <div class="featured-tags">
+      <ul>`;
+    project.technologies.forEach((element) => {
+      addElements += `<li>${element}</li>`;
+    });
+    addElements += `
+      </ul>
+    </div>`;
+
+    addElements += `
+    <div>
+      <p class="featured-content">
+      ${project.description}
+      </p>
+      <div class='div-pop-buttons'>
+      <button class="featured-btn pop"><a href='${project.liveLink}'>See Live <img src="resources/images/popup-window/IconLivePopButton.svg"></a></button>
+      <button class="featured-btn pop"><a href='${project.sourceLink}'>See Source <img src="resources/images/popup-window/Icon-see-source.popup.svg"></a></button>
+      </div>
+    </div>`
+    
+    divTitleTags.innerHTML = addElements;
+    divPopTitle.appendChild(divTitleTags);
+  }
+});
+
+
+
+/*
+projects.forEach((project, index) => {
+  if (index === 0){
+    addElements += `
+    <h2 id='featured-title' class="title-featured">${project.name}</h2>`;
+    divTitleTags = addElements;
+  }
+});
+divPopTitle.appendChild(divTitleTags);
+*/
