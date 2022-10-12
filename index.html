@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>My portfolio</title>
 </head>
+
 <body>
   <div class="wrapper">
     <nav class="flex-toolbar">
@@ -24,6 +26,12 @@
       </div>
     </nav>
 
+    <div id="popup" class="popupContent display-none">
+      <button id="close-btn-pop">&#10799;</button>
+      <div id='popTitle' class="title-featured"></div>
+    </div>
+
+
     <div class="menu-container display-none">
       <button id="close-btn">&#10799;</button>
       <ul class="menu-elements">
@@ -36,149 +44,58 @@
     <section class="headline-section">
       <div class="bg-image-header"><img src="resources/images/Illustration-header.svg"></div>
       <div class="header-content-responsive">
-      <div class="modifier">
-      <div id="primary-text">
-        <h1>Hey There.<br> I'm Jesus</h1>
-      </div>
-      <div id="supporting-text">
-        <h2>I'm a Software Developer</h2>
-      </div>
-      <div class="description">
-        <p>I can help you build a product , feature or website Look through some of 
-          my work and experience! If you like what you see and have a project you need coded, 
-          don’t hestiate to contact me.
-        </p>
-      </div>
-    </div>
+        <div class="modifier">
+          <div id="primary-text">
+            <h1>Hey There.<br> I'm Jesus</h1>
+          </div>
+          <div id="supporting-text">
+            <h2>I'm a Software Developer</h2>
+          </div>
+          <div class="description">
+            <p>I can help you build a product , feature or website Look through some of
+              my work and experience! If you like what you see and have a project you need coded,
+              don’t hestiate to contact me.
+            </p>
+          </div>
+        </div>
 
-      <nav class="social-media">
-        <ul>
-          <li><a href="https://github.com/Sparktan24"><img src="resources/Menu-button/cat.svg"/></a></li>
-          <li><a href="https://www.linkedin.com/in/jesus-molina-2b104424a/"><img src="resources/Menu-button/linkedin.svg"/></a></li>
-          <li><a href="#"></a><img src="resources/Menu-button/hand.svg"/></li>
-          <li><a href="https://twitter.com/Sparktan1"><img src="resources/Menu-button/twitter.svg"/></a></li>
-          <li><a href="#"></a><img src="resources/Menu-button/m.svg"/></li>
-        </ul>
-      </nav>
-    </div>
+        <nav class="social-media">
+          <ul>
+            <li><a href="https://github.com/Sparktan24"><img src="resources/Menu-button/cat.svg" /></a></li>
+            <li><a href="https://www.linkedin.com/in/jesus-molina-2b104424a/"><img
+                  src="resources/Menu-button/linkedin.svg" /></a></li>
+            <li><a href="#"></a><img src="resources/Menu-button/hand.svg" /></li>
+            <li><a href="https://twitter.com/Sparktan1"><img src="resources/Menu-button/twitter.svg" /></a></li>
+            <li><a href="#"></a><img src="resources/Menu-button/m.svg" /></li>
+          </ul>
+        </nav>
+      </div>
     </section>
 
     <section class="recent-works-section" id="portfolio">
       <div class="works-wrapper">
-      <div id="my-recent-works">
-        <h2>My Recent Works</h2>
-        <hr class="line-responsive">
-      </div>
-      <div class="grid-container">
-
-        <div class="grid-item1">
-          <div class="featured-work">
-            <img src="resources/images/Placeholder1.svg" />
-            <div class="right-block">
-            <h2 class="title-featured">Multi-post Stories</h2>
-            <p class="featured-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's 
-              standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-            </p>
-            <div class="featured-tags">
-              <ul>
-                <li>CSS</li>
-                <li>html</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-            <button class="featured-btn">See Project</button>
-          </div>
-          </div>
+        <div id="my-recent-works">
+          <h2>My Recent Works</h2>
+          <hr class="line-responsive">
         </div>
-
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
-        </div>
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
-        </div>
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
-        </div>
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
-        </div>
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
-        </div>
-        <div class="work-post">
-          <h3 class="title-work">Profesional Art Printing Data</h3>
-          <p class="work-content">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-          <div class="work-tags">
-            <ul>
-              <li>CSS</li>
-              <li>html</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <button class="work-btn">See Project</button>
+        <div class="grid-container" id="portfolioWrapper">
         </div>
       </div>
-    </div>
     </section>
 
     <section class="about-me" id="aboutme">
       <div class="about-me-block">
-      <h1 class="about-me-text">About me</h1>
-      <div class="description">
-        <p>
-          Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work 
-          and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-        </p>
+        <h1 class="about-me-text">About me</h1>
+        <div class="description">
+          <p>
+            Hello I’m a software developer! I can help you build a product , feature or website Look through some of my
+            work
+            and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <button class="featured-btn">Get My Resume</button>
       </div>
-      <button class="featured-btn">Get My Resume</button>
-    </div>
-    <div class="bg-image"><img src="resources/images/about-me-img-desktop.svg"></div>
+      <div class="bg-image"><img src="resources/images/about-me-img-desktop.svg"></div>
     </section>
 
     <section class="about-me-skills">
@@ -215,33 +132,35 @@
         </div>
       </div>
     </section>
-    
+
     <section class="contact-me" id="contact">
       <div class="contact-me-block">
-      <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form action="https://formspree.io/f/xjvzwdwz" method="post" class="contact-me-form">
-        <ul>
-          <li><input type="text" name="name" placeholder="Full name" maxlength="30" required></li>
-          <li><input type="email" name="email-address" placeholder="Email address" required></li>
-          <li><textarea name="msg" placeholder="Enter text here" rows="10" maxlength="500" required></textarea></li>
-          <li class="li-btn"><button class="featured-btn about-me-btn">Get in touch</button></li>
-        </ul>
-      </form>
-    </div>
-    </section>
-      
-      <footer>
-        <hr class="footer-line-desktop">
-        <nav class="social-media footer">
+        <h2 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat please
+          get in touch.</h2>
+        <form action="https://formspree.io/f/xjvzwdwz" method="post" class="contact-me-form">
           <ul>
-            <li><a href="https://github.com/Sparktan24"><img src="./resources/images/footer/github.svg"/></a></li>
-            <li><a href="https://www.linkedin.com/in/jesus-molina-2b104424a/"><img src="./resources/images/footer/linkedin.svg"/></a></li>
-            <li><a href="#"></a><img src="./resources/images/footer/hand.svg"/></li>
-            <li><a href="https://twitter.com/Sparktan1"><img src="./resources/images/footer/twitter.svg"/></a></li>
-            <li><a href="#"></a><img src="./resources/images/footer/m.svg"/></li>
+            <li><input type="text" name="name" placeholder="Full name" maxlength="30" required></li>
+            <li><input type="email" name="email-address" placeholder="Email address" required></li>
+            <li><textarea name="msg" placeholder="Enter text here" rows="10" maxlength="500" required></textarea></li>
+            <li class="li-btn"><button class="featured-btn about-me-btn">Get in touch</button></li>
           </ul>
-        </nav>
-        <hr class="footer-line">
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <hr class="footer-line-desktop">
+      <nav class="social-media footer">
+        <ul>
+          <li><a href="https://github.com/Sparktan24"><img src="./resources/images/footer/github.svg" /></a></li>
+          <li><a href="https://www.linkedin.com/in/jesus-molina-2b104424a/"><img
+                src="./resources/images/footer/linkedin.svg" /></a></li>
+          <li><a href="#"></a><img src="./resources/images/footer/hand.svg" /></li>
+          <li><a href="https://twitter.com/Sparktan1"><img src="./resources/images/footer/twitter.svg" /></a></li>
+          <li><a href="#"></a><img src="./resources/images/footer/m.svg" /></li>
+        </ul>
+      </nav>
+      <hr class="footer-line">
     </footer>
   </div>
 </body>

@@ -739,7 +739,7 @@ hr.rounded {
 .menu-container {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -772,4 +772,26 @@ hr.rounded {
 
 .display-none {
   display: none;
+}
+
+.popupContent {
+  position: fixed;
+  background-color: #fff;
+}
+
+.titlePopup {
+  padding: 5%;
+}
+
+.popInside {
+  padding: 5%;
+}
+
+#close-btn-pop {
+  color: #67798e;
+  background-color: #fff;
+  border: 0;
+  align-self: flex-end;
+  font-size: 30px;
+  padding: 10px 38px 10px 10px;
 }
