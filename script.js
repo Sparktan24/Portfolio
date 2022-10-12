@@ -133,21 +133,21 @@ const divPopTitle = document.querySelector('#popTitle');
 seeProjectButton.addEventListener('click', () => {
   popupContainer.classList.toggle('display-none')
 });
-//CLOSE BUTTON POP
-const closeButtonPop = document.querySelector('#close-btn-pop');
 
-//closeButtonPop.id = 'close-btn-pop';
-closeButtonPop.addEventListener('click', () => {
-  popupContainer.classList.add('display-none');
-});
 
 
 let divTitleTags = document.createElement('div');
-
+divTitleTags.style.display = 'flex';
+divTitleTags.style.flexDirection = 'column';
+divTitleTags.style.gap = '24px';
   
 //TITLE BLOCK
 projects.forEach((project, index) => {
-  addElements += `<h2 id='featured-title' class="title-featured">${project.name}</h2>`;
+  addElements += `
+  <div class='flexy'>
+  <h2 id='featured-title' class="title-featured">${project.name}</h2>
+  <button id="close-btn-pop">&#10799;</button>
+  </div>`;
   if (index === 0){
       addElements += `
       <div class="featured-tags">
@@ -160,7 +160,8 @@ projects.forEach((project, index) => {
     </div>`;
 
     addElements += `
-    <div>
+    <img id='featured-img' src="resources/images/${project.featuredImage}" />
+    <div class='flexy-buttons column'>
       <p class="featured-content">
       ${project.description}
       </p>
@@ -177,13 +178,10 @@ projects.forEach((project, index) => {
 
 
 
-/*
-projects.forEach((project, index) => {
-  if (index === 0){
-    addElements += `
-    <h2 id='featured-title' class="title-featured">${project.name}</h2>`;
-    divTitleTags = addElements;
-  }
+//CLOSE BUTTON POP
+const closeButtonPop = document.querySelector('#close-btn-pop');
+
+//closeButtonPop.id = 'close-btn-pop';
+closeButtonPop.addEventListener('click', () => {
+  popupContainer.classList.add('display-none');
 });
-divPopTitle.appendChild(divTitleTags);
-*/

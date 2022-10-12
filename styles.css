@@ -778,6 +778,7 @@ hr.rounded {
   position: fixed;
   background-color: #fff;
   padding: 5%;
+  border: solid 1px #DFE1E6;
 }
 
 .titlePopup {
@@ -799,8 +800,44 @@ hr.rounded {
 .div-pop-buttons {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .pop {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
+
+.pop a img {
+  margin-left: 15px;
+}
+
+.pop a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.flexy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexy-buttons {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+@media (min-width: 768px){
+  #featured-img {
+    width: 684px;
+    height: 448px;
+  }
+}
+
