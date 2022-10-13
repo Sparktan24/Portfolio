@@ -29,7 +29,23 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
+    featuredImage: 'workBG.svg',
+    technologies: ['CSS', 'html', 'javascript'],
+    liveLink: 'https://sparktan24.github.io/Portfolio/',
+    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+  },
+  {
+    name: 'DataDashboard',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'workBG.svg',
+    technologies: ['CSS', 'html', 'javascript'],
+    liveLink: 'https://sparktan24.github.io/Portfolio/',
+    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+  },
+  {
+    name: 'Website',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    featuredImage: 'workBG.svg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -37,7 +53,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
+    featuredImage: 'workBG.svg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -45,7 +61,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
+    featuredImage: 'workBG.svg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -53,23 +69,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
-    technologies: ['CSS', 'html', 'javascript'],
-    liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
-  },
-  {
-    name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
-    technologies: ['CSS', 'html', 'javascript'],
-    liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
-  },
-  {
-    name: 'Profesional Art Printing Data',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'work-BG.svg',
+    featuredImage: 'workBG.svg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -130,7 +130,8 @@ let addElements = '';
 const seeProjectButton = document.querySelector('.featured-btn');
 const popupContainer = document.getElementById('popup-container');
 const divPopTitle = document.querySelector('#popTitle');
-let seeProjectButtonWork = document.querySelector(`.work-btn`);
+
+
 /*
 projects.forEach((index) => {
   if (index !==0){
@@ -144,7 +145,11 @@ projects.forEach((index) => {
 
 //DISPLAY POP UP FEATURED BUTTON
 seeProjectButton.addEventListener('click', () => {
-  popupContainer.classList.toggle('display-none')
+  const title = popupContainer.querySelector('#featured-title');
+  title.textContent=projects[0].name;
+  const image = popupContainer.querySelector('#featured-img');
+  image.src = `resources/images/${projects[0].featuredImage}`;
+  popupContainer.classList.toggle('display-none');
 });
 
 
@@ -190,6 +195,20 @@ projects.forEach((project, index) => {
 });
 
 
+let seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
+seeProjectButtonWork.forEach((button) => {
+  button.addEventListener('click', (e)=>{
+    const { id } = e.target;
+    const index = id.replace('work-btn-index-','');
+    const title = popupContainer.querySelector('#featured-title');
+    title.textContent=projects[index].name;
+    const image = popupContainer.querySelector('#featured-img');
+    image.src = `resources/images/${projects[index].featuredImage}`;
+    popupContainer.classList.toggle('display-none');
+
+  })
+})
+
 //CLOSE BUTTON POP
 const closeButtonPop = document.querySelector('#close-btn-pop');
 
@@ -201,11 +220,4 @@ closeButtonPop.addEventListener('click', () => {
 //DISPLAY POP UP WORKS BUTTON
 seeProjectButtonWork.addEventListener('click', () => {
   popupContainer.classList.toggle('display-none')
-});
-
-projects.forEach((project, index) => {
-  let gluePopWork = '';
-  if(index !== 0){
-
-  }
 });
