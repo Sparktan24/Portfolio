@@ -757,6 +757,11 @@ hr.rounded {
   padding: 24px;
 }
 
+.pop a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu-elements li a {
   text-decoration: none;
   color: #fff5e1;
@@ -779,7 +784,7 @@ hr.rounded {
   position: fixed;
   background-color: #fff;
   padding: 5%;
-  border: solid 1px #DFE1E6;
+  border: solid 1px #dfe1e6;
   right: 7%;
   left: 5%;
   top: 10%;
@@ -800,6 +805,7 @@ hr.rounded {
   align-self: flex-end;
   font-size: 30px;
 }
+
 .div-pop-buttons {
   display: flex;
   justify-content: space-between;
@@ -815,11 +821,6 @@ hr.rounded {
 
 .pop a img {
   margin-left: 10px;
-}
-
-.pop a{
-  text-decoration: none;
-  color: #fff;
 }
 
 .flexy {
@@ -848,8 +849,7 @@ hr.rounded {
   gap: 25px;
 }
 
-
-@media (min-width: 768px){
+@media (min-width: 768px) {
   #featured-img {
     width: 100%;
     height: 100%;
