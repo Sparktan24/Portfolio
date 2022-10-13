@@ -77,6 +77,7 @@ const projects = [
 ];
 
 const portfolioContainer = document.getElementById('portfolioWrapper');
+let index;
 projects.forEach((project, index) => {
   const card = document.createElement('card');
   let addElements = '';
@@ -116,7 +117,7 @@ projects.forEach((project, index) => {
     addElements += `
       </ul>
     </div>
-    <button class="work-btn">See Project</button>
+    <button class="work-btn" id='work-btn-index-${index}'>See Project</button>
   </div>`
 
   }
@@ -129,7 +130,19 @@ let addElements = '';
 const seeProjectButton = document.querySelector('.featured-btn');
 const popupContainer = document.getElementById('popup-container');
 const divPopTitle = document.querySelector('#popTitle');
+let seeProjectButtonWork = document.querySelector(`.work-btn`);
+/*
+projects.forEach((index) => {
+  if (index !==0){
+    seeProjectButtonWork = document.querySelector(`#work-btn-index-${index}`);
+    seeProjectButtonWork.addEventListener('click', () => {
+      popupContainer.classList.toggle('display-none')
+    });
+  }
+});
+*/
 
+//DISPLAY POP UP FEATURED BUTTON
 seeProjectButton.addEventListener('click', () => {
   popupContainer.classList.toggle('display-none')
 });
@@ -177,11 +190,22 @@ projects.forEach((project, index) => {
 });
 
 
-
 //CLOSE BUTTON POP
 const closeButtonPop = document.querySelector('#close-btn-pop');
 
 //closeButtonPop.id = 'close-btn-pop';
 closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
+});
+
+//DISPLAY POP UP WORKS BUTTON
+seeProjectButtonWork.addEventListener('click', () => {
+  popupContainer.classList.toggle('display-none')
+});
+
+projects.forEach((project, index) => {
+  let gluePopWork = '';
+  if(index !== 0){
+
+  }
 });
