@@ -182,7 +182,7 @@ projects.forEach((project, index) => {
   }
 });
 
-const seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
+const seeProjectButtonWork = document.querySelectorAll('.work-btn');
 seeProjectButtonWork.forEach((button) => {
   button.addEventListener('click', (e) => {
     const { id } = e.target;
@@ -193,7 +193,6 @@ seeProjectButtonWork.forEach((button) => {
     image.src = `resources/images/${projects[index].featuredImage}`;
     popupContainer.classList.toggle('display-none');
     wrapper.classList.toggle('blur');
-
   });
 });
 
