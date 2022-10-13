@@ -132,17 +132,6 @@ const popupContainer = document.getElementById('popup-container');
 const divPopTitle = document.querySelector('#popTitle');
 
 
-/*
-projects.forEach((index) => {
-  if (index !==0){
-    seeProjectButtonWork = document.querySelector(`#work-btn-index-${index}`);
-    seeProjectButtonWork.addEventListener('click', () => {
-      popupContainer.classList.toggle('display-none')
-    });
-  }
-});
-*/
-
 //DISPLAY POP UP FEATURED BUTTON
 seeProjectButton.addEventListener('click', () => {
   const title = popupContainer.querySelector('#featured-title');
@@ -159,7 +148,7 @@ let divTitleTags = document.createElement('div');
 divTitleTags.style.display = 'flex';
 divTitleTags.style.flexDirection = 'column';
 divTitleTags.style.gap = '24px';
-  
+ 
 //TITLE BLOCK
 projects.forEach((project, index) => {
   addElements += `
@@ -175,10 +164,11 @@ projects.forEach((project, index) => {
       addElements += `<li>${element}</li>`;
     });
     addElements += `
-      </ul>
-    </div>`;
+      </ul>`;
 
     addElements += `
+    </div>
+    <div class='format'>
     <img id='featured-img' src="resources/images/${project.featuredImage}" />
     <div class='flexy-buttons column'>
       <p class="featured-content">
@@ -188,8 +178,9 @@ projects.forEach((project, index) => {
       <button class="featured-btn pop"><a href='${project.liveLink}'>See Live <img src="resources/images/popup-window/IconLivePopButton.svg"></a></button>
       <button class="featured-btn pop"><a href='${project.sourceLink}'>See Source <img src="resources/images/popup-window/Icon-see-source.popup.svg"></a></button>
       </div>
+    </div>
     </div>`
-    
+   
     divTitleTags.innerHTML = addElements;
     divPopTitle.appendChild(divTitleTags);
   }
@@ -222,6 +213,8 @@ closeButtonPop.addEventListener('click', () => {
 });
 
 //DISPLAY POP UP WORKS BUTTON
+/*
 seeProjectButtonWork.addEventListener('click', () => {
   popupContainer.classList.toggle('display-none')
 });
+*/
