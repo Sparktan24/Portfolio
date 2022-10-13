@@ -1,21 +1,21 @@
-let menuButton = document.querySelector('#menu');
-let menuContainer = document.querySelector('.menu-container');
-let closeButton = document.querySelector('#close-btn');
-let menuElements = document.querySelectorAll('.menu-button');
+const menuButton = document.querySelector('#menu');
+const menuContainer = document.querySelector('.menu-container');
+const closeButton = document.querySelector('#close-btn');
+const menuElements = document.querySelectorAll('.menu-button');
 
 menuButton.addEventListener('click', () => {
-  menuContainer.classList.remove('display-none')
-})
+  menuContainer.classList.remove('display-none');
+});
 
 closeButton.addEventListener('click', () => {
   menuContainer.classList.add('display-none');
-})
+});
 
 menuElements.forEach((item) => {
   item.addEventListener('click', () => {
     menuContainer.classList.add('display-none');
-  })
-})
+  });
+});
 
 const projects = [
   {
@@ -24,7 +24,7 @@ const projects = [
     featuredImage: 'Placeholder1.svg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -32,7 +32,7 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'DataDashboard',
@@ -40,7 +40,7 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'Website',
@@ -48,7 +48,7 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -56,7 +56,7 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -64,7 +64,7 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
   },
   {
     name: 'Profesional Art Printing Data',
@@ -72,12 +72,12 @@ const projects = [
     featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio'
-  }
+    sourceLink: 'https://github.com/Sparktan24/Portfolio',
+  },
 ];
 
 const portfolioContainer = document.getElementById('portfolioWrapper');
-let index;
+
 projects.forEach((project, index) => {
   const card = document.createElement('card');
   let addElements = '';
@@ -102,7 +102,7 @@ projects.forEach((project, index) => {
     </div>
     <button class="featured-btn">See Project</button>
   </div>
-  </div>`
+  </div>`;
   } else {
     card.classList.add('work-post');
     addElements += `
@@ -112,13 +112,13 @@ projects.forEach((project, index) => {
     <div class="work-tags">
       <ul>`;
     project.technologies.forEach((element) => {
-      addElements += `<li>${element}</li>`
+      addElements += `<li>${element}</li>`;
     });
     addElements += `
       </ul>
     </div>
     <button class="work-btn" id='work-btn-index-${index}'>See Project</button>
-  </div>`
+  </div>`;
 
   }
   card.innerHTML = addElements;
@@ -126,16 +126,16 @@ projects.forEach((project, index) => {
 });
 
 let addElements = '';
-//OPEN POPUP
+
 const seeProjectButton = document.querySelector('.featured-btn');
 const popupContainer = document.getElementById('popup-container');
 const divPopTitle = document.querySelector('#popTitle');
 
+const wrapper = document.querySelector('.wrapper');
 
-//DISPLAY POP UP FEATURED BUTTON
 seeProjectButton.addEventListener('click', () => {
   const title = popupContainer.querySelector('#featured-title');
-  title.textContent=projects[0].name;
+  title.textContent = projects[0].name;
   const image = popupContainer.querySelector('#featured-img');
   image.src = `resources/images/${projects[0].featuredImage}`;
   popupContainer.classList.toggle('display-none');
@@ -144,20 +144,20 @@ seeProjectButton.addEventListener('click', () => {
 
 
 
-let divTitleTags = document.createElement('div');
+const divTitleTags = document.createElement('div');
 divTitleTags.style.display = 'flex';
 divTitleTags.style.flexDirection = 'column';
 divTitleTags.style.gap = '24px';
- 
-//TITLE BLOCK
+
+
 projects.forEach((project, index) => {
   addElements += `
   <div class='flexy'>
   <h2 id='featured-title' class="title-featured">${project.name}</h2>
   <button id="close-btn-pop">&#10799;</button>
   </div>`;
-  if (index === 0){
-      addElements += `
+  if (index === 0) {
+    addElements += `
       <div class="featured-tags">
       <ul>`;
     project.technologies.forEach((element) => {
@@ -179,42 +179,36 @@ projects.forEach((project, index) => {
       <button class="featured-btn pop"><a href='${project.sourceLink}'>See Source <img src="resources/images/popup-window/Icon-see-source.popup.svg"></a></button>
       </div>
     </div>
-    </div>`
-   
+    </div>`;
+
     divTitleTags.innerHTML = addElements;
     divPopTitle.appendChild(divTitleTags);
   }
 });
 
-const wrapper = document.querySelector('.wrapper');
 
-let seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
+
+const seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
 seeProjectButtonWork.forEach((button) => {
-  button.addEventListener('click', (e)=>{
+  button.addEventListener('click', (e) => {
     const { id } = e.target;
-    const index = id.replace('work-btn-index-','');
+    const index = id.replace('work-btn-index-', '');
     const title = popupContainer.querySelector('#featured-title');
-    title.textContent=projects[index].name;
+    title.textContent = projects[index].name;
     const image = popupContainer.querySelector('#featured-img');
     image.src = `resources/images/${projects[index].featuredImage}`;
     popupContainer.classList.toggle('display-none');
     wrapper.classList.toggle('blur');
 
-  })
-})
+  });
+});
 
-//CLOSE BUTTON POP
+
 const closeButtonPop = document.querySelector('#close-btn-pop');
 
-//closeButtonPop.id = 'close-btn-pop';
+
 closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
   wrapper.classList.toggle('blur');
 });
 
-//DISPLAY POP UP WORKS BUTTON
-/*
-seeProjectButtonWork.addEventListener('click', () => {
-  popupContainer.classList.toggle('display-none')
-});
-*/
