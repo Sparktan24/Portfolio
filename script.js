@@ -29,7 +29,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -37,7 +37,7 @@ const projects = [
   {
     name: 'DataDashboard',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -45,7 +45,7 @@ const projects = [
   {
     name: 'Website',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -53,7 +53,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -61,7 +61,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -69,7 +69,7 @@ const projects = [
   {
     name: 'Profesional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
-    featuredImage: 'workBG.svg',
+    featuredImage: 'ProjectImg.jpg',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio'
@@ -150,6 +150,7 @@ seeProjectButton.addEventListener('click', () => {
   const image = popupContainer.querySelector('#featured-img');
   image.src = `resources/images/${projects[0].featuredImage}`;
   popupContainer.classList.toggle('display-none');
+  wrapper.classList.toggle('blur');
 });
 
 
@@ -194,6 +195,7 @@ projects.forEach((project, index) => {
   }
 });
 
+const wrapper = document.querySelector('.wrapper');
 
 let seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
 seeProjectButtonWork.forEach((button) => {
@@ -205,6 +207,7 @@ seeProjectButtonWork.forEach((button) => {
     const image = popupContainer.querySelector('#featured-img');
     image.src = `resources/images/${projects[index].featuredImage}`;
     popupContainer.classList.toggle('display-none');
+    wrapper.classList.toggle('blur');
 
   })
 })
@@ -215,6 +218,7 @@ const closeButtonPop = document.querySelector('#close-btn-pop');
 //closeButtonPop.id = 'close-btn-pop';
 closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
+  wrapper.classList.toggle('blur');
 });
 
 //DISPLAY POP UP WORKS BUTTON

@@ -834,6 +834,12 @@ hr.rounded {
   gap: 20px;
 }
 
+.blur {
+  filter: blur(8px);
+}
+
+
+
 
 @media (min-width: 768px){
   #featured-img {
