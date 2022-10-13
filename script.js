@@ -119,7 +119,6 @@ projects.forEach((project, index) => {
     </div>
     <button class="work-btn" id='work-btn-index-${index}'>See Project</button>
   </div>`;
-
   }
   card.innerHTML = addElements;
   portfolioContainer.appendChild(card);
@@ -142,13 +141,10 @@ seeProjectButton.addEventListener('click', () => {
   wrapper.classList.toggle('blur');
 });
 
-
-
 const divTitleTags = document.createElement('div');
 divTitleTags.style.display = 'flex';
 divTitleTags.style.flexDirection = 'column';
 divTitleTags.style.gap = '24px';
-
 
 projects.forEach((project, index) => {
   addElements += `
@@ -186,8 +182,6 @@ projects.forEach((project, index) => {
   }
 });
 
-
-
 const seeProjectButtonWork = document.querySelectorAll(`.work-btn`);
 seeProjectButtonWork.forEach((button) => {
   button.addEventListener('click', (e) => {
@@ -203,12 +197,8 @@ seeProjectButtonWork.forEach((button) => {
   });
 });
 
-
 const closeButtonPop = document.querySelector('#close-btn-pop');
-
-
 closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
   wrapper.classList.toggle('blur');
 });
-
