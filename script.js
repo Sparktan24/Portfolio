@@ -201,3 +201,7 @@ closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
   wrapper.classList.toggle('blur');
 });
+
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const emailError = document.querySelector('#mail + span.error');
