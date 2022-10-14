@@ -210,8 +210,8 @@ function toUpperCaseValidation(str) {
   const isMatch = regEx.test(str);
   return isMatch;
 }
+
 function showError() {
-  const regEx = /[A-Z]/;
   const isMatch = toUpperCaseValidation(email.value);
   const result = isMatch ? 'Email should be lowercase' : '';
   emailError.textContent = result;
@@ -226,6 +226,7 @@ email.addEventListener('input', () => {
     showError();
   }
 });
+
 form.addEventListener('submit', (event) => {
   if (!email.validity.valid || toUpperCaseValidation(email.value)) {
     showError();
