@@ -874,10 +874,7 @@ input[type="email"] {
   box-sizing: border-box;
 }
 /* This is our style for the invalid fields */
-#mail:invalid {
-  border-color: #900;
-  background-color: #fdd;
-}
+
 
 #mail:focus:invalid {
   outline: none;
@@ -886,15 +883,13 @@ input[type="email"] {
 .error {
   width: 100%;
   padding: 0;
-
   font-size: 80%;
-  color: white;
-  background-color: #900;
+  color: #900;
   border-radius: 0 0 5px 5px;
-
   box-sizing: border-box;
 }
 
 .error.active {
   padding: 0.3em;
+  margin-top: -22px;
 }
