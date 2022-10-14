@@ -206,19 +206,19 @@ const form = document.querySelector('form');
 const email = document.getElementById('mail');
 const emailError = document.querySelector('.error');
 function toUpperCaseValidation(str) {
-  let regEx = /[A-Z]/;
-  let isMatch = regEx.test(str);
+  const regEx = /[A-Z]/;
+  const isMatch = regEx.test(str);
   return isMatch;
 }
 function showError() {
-  let regEx = /[A-Z]/;
-  let isMatch = toUpperCaseValidation(email.value);
-  let result = isMatch ? 'Email should be lowercase' : '';
+  const regEx = /[A-Z]/;
+  const isMatch = toUpperCaseValidation(email.value);
+  const result = isMatch ? 'Email should be lowercase' : '';
   emailError.textContent = result;
-  emailError.className = "error active";
+  emailError.className = 'error active';
 }
 
-email.addEventListener("input", (event) => {
+email.addEventListener('input', () => {
   if (email.validity.valid && !toUpperCaseValidation(email.value)) {
     emailError.textContent = '';
     emailError.className = 'error';
