@@ -205,7 +205,7 @@ closeButtonPop.addEventListener('click', () => {
 const form = document.querySelector('form');
 const email = document.getElementById('mail');
 const emailError = document.querySelector('.error');
-function toUpperCaseValidation(str){
+function toUpperCaseValidation(str) {
   let regEx = /[A-Z]/;
   let isMatch = regEx.test(str);
   return isMatch;
@@ -216,19 +216,19 @@ function showError() {
   let result = isMatch ? 'Email should be lowercase' : '';
   emailError.textContent = result;
   emailError.className = "error active";
-} 
+}
 
 email.addEventListener("input", (event) => {
   if (email.validity.valid && !toUpperCaseValidation(email.value)) {
-  emailError.textContent = '';
-  emailError.className = 'error';
-  }else {
+    emailError.textContent = '';
+    emailError.className = 'error';
+  } else {
     showError();
   }
-  }); 
-  form.addEventListener('submit', (event) => {
+});
+form.addEventListener('submit', (event) => {
   if (!email.validity.valid || toUpperCaseValidation(email.value)) {
     showError();
     event.preventDefault();
   }
-  });
+});
