@@ -201,3 +201,35 @@ closeButtonPop.addEventListener('click', () => {
   popupContainer.classList.add('display-none');
   wrapper.classList.toggle('blur');
 });
+
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const emailError = document.querySelector('.error');
+function toUpperCaseValidation(str) {
+  const regEx = /[A-Z]/;
+  const isMatch = regEx.test(str);
+  return isMatch;
+}
+
+function showError() {
+  const isMatch = toUpperCaseValidation(email.value);
+  const result = isMatch ? 'Email should be lowercase' : '';
+  emailError.textContent = result;
+  emailError.className = 'error active';
+}
+
+email.addEventListener('input', () => {
+  if (email.validity.valid && !toUpperCaseValidation(email.value)) {
+    emailError.textContent = '';
+    emailError.className = 'error';
+  } else {
+    showError();
+  }
+});
+
+form.addEventListener('submit', (event) => {
+  if (!email.validity.valid || toUpperCaseValidation(email.value)) {
+    showError();
+    event.preventDefault();
+  }
+});
