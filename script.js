@@ -19,7 +19,7 @@ menuElements.forEach((item) => {
 
 const projects = [
   {
-    name: 'Multi-Post Stories',
+    name: 'Developer Week Project',
     description: 'This is my capstone project about developerWeek wich is the largest developer conference & event series including the DeveloperWeek 2023 Conference & Expo, 1,000+ attendee hackathon, 800+ attendee tech hiring expo, and a series of workshops, technical talks, and keynotes.',
     featuredImage: 'Project-Page.png',
     technologies: ['CSS', 'html', 'javascript'],
