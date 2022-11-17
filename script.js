@@ -23,8 +23,8 @@ const projects = [
     description: 'This is my capstone project about developerWeek wich is the largest developer conference & event series including the DeveloperWeek 2023 Conference & Expo, 1,000+ attendee hackathon, 800+ attendee tech hiring expo, and a series of workshops, technical talks, and keynotes.',
     featuredImage: 'Project-Page.png',
     technologies: ['CSS', 'html', 'javascript'],
-    liveLink: 'https://sparktan24.github.io/Portfolio/',
-    sourceLink: 'https://github.com/Sparktan24/Portfolio',
+    liveLink: 'https://sparktan24.github.io/Page-web-development-course/',
+    sourceLink: 'https://github.com/Sparktan24/Page-web-development-course',
   },
   {
     name: 'Profesional Art Printing Data',
