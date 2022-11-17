@@ -20,8 +20,8 @@ menuElements.forEach((item) => {
 const projects = [
   {
     name: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    featuredImage: 'Placeholder1.svg',
+    description: 'This is my capstone project about developerWeek wich is the largest developer conference & event series including the DeveloperWeek 2023 Conference & Expo, 1,000+ attendee hackathon, 800+ attendee tech hiring expo, and a series of workshops, technical talks, and keynotes.',
+    featuredImage: 'Project-Page.png',
     technologies: ['CSS', 'html', 'javascript'],
     liveLink: 'https://sparktan24.github.io/Portfolio/',
     sourceLink: 'https://github.com/Sparktan24/Portfolio',

@@ -21,6 +21,10 @@ body {
   display: none;
 }
 
+#featured-img {
+  width: 100%;
+}
+
 .headline-section {
   display: flex;
   flex-direction: column;
@@ -851,8 +855,7 @@ hr.rounded {
 
 @media (min-width: 768px) {
   #featured-img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
   }
 
   .format {
