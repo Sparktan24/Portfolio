@@ -22,14 +22,6 @@
 - Twitter: [@Sparktan1](https://twitter.com/Sparktan1)
 - LinkedIn: [Jesus Molina](https://www.linkedin.com/in/jesus-molina-2b104424a/)
 
-👤 **Giorgi Bokuchava**
-
-- GitHub: [@Boku52500](https://github.com/Boku52500)
-
-👤 **Martin Perez**
-
-- GitHub: [@mperezbazan](https://github.com/mperezbazan)
-
 
 ## 🤝 Contributing
 
